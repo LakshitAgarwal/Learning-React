@@ -4,6 +4,7 @@
   "description": "Learning-React-Class-2",
   "main": "script.js",
   "scripts": {
+    "start": "parcel index.html",
     "test": "jest"
   },
   "author": "Lakshit Agarwal",
