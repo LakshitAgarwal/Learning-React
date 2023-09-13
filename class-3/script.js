@@ -8,7 +8,6 @@ const root = ReactDOM.createRoot(document.getElementById("container"));
 // A react element is rendered like this:
 // root.render(heading);
 
-
 // Functional Component:
 
 const Title = function () {
@@ -22,7 +21,7 @@ const Title = function () {
 
 const HeaderComponent = () => {
   return (
-    <div>
+    <React.Fragment>
       {/* like this we can use ReactElement inside Functional Component.  */}
       {heading}
       <h2>Namaste Everyone!</h2>
@@ -30,7 +29,7 @@ const HeaderComponent = () => {
       {/* Like this we can use functional Component inside another functional Component */}
       {Title()}
       {/* We can also do it like this: <Title /> */}
-    </div>
+    </React.Fragment>
   );
 };
 // Functional component is rendered like this:
